@@ -20,10 +20,17 @@ jobs:
           name: cross compile
           command: |
             gox -os="linux darwin windows" -arch="amd64" -output="dist/${CIRCLE_PROJECT_REPONAME}_{{.OS}}_{{.Arch}}"
+      - persist_to_workspace:
+          name: save distributions
+          root: .
+          paths:
+            - ./dist
   publish:
     executor: node/default
     steps:
       - checkout
+      - attach_workspace:
+          at: .
       - run:
           command: |
             npm install
@@ -37,8 +44,14 @@ workflows:
       - build
   publish:
     jobs:
+      - build:
+         filters:
+           branches:
+             only: master
       - publish:
           filters:
             branches:
               only: master
           context: semantics-release
+          requires:
+            - build
