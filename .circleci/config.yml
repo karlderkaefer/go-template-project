@@ -8,13 +8,10 @@ jobs:
       - checkout
       - node/install
       - run:
-          name: npm publish
+          name: release
           command: |
             npx semantic-release
 workflows:
-  build:
-    jobs:
-      - test
   publish:
     jobs:
       - publish:
