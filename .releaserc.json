@@ -1,8 +1,7 @@
 {
   "branches": [
     "master",
-    "main",
-    "configure-semantic-release"
+    "main"
   ],
   "repositoryUrl": "git@github.com:karlderkaefer/go-template-project.git",
   "plugins": [
