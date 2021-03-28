@@ -16,10 +16,13 @@ import (
 	log "github.com/sirupsen/logrus"
 )
 
+var Version string
+
 func main() {
 	initLogger()
 	router := gin.New()
 	router.GET("/health", healthCheck)
+	router.GET("/version", version)
 	server := &http.Server{
 		Addr:    ":8000",
 		Handler: router,
@@ -52,6 +55,11 @@ func initLogger() {
 func healthCheck(c *gin.Context) {
 	ok := gin.H{"status": "ok"}
 	c.JSON(http.StatusOK, ok)
+}
+
+func version(c *gin.Context) {
+	version := gin.H{"version": Version}
+	c.JSON(http.StatusOK, version)
 }
 
 func gracefulShutdownHandler(srv *http.Server) {
