@@ -8,7 +8,11 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     "@semantic-release/github", {
-      "assets": ["dist/**"]
+      "assets": [
+        {"path": "dist/go-template-project_darwin_amd64", "label": "Darwin distribution"},
+        {"path": "dist/go-template-project_linux_amd64", "label": "Linux distribution"},
+        {"path": "dist/go-template-project_windows_amd64.exe", "label": "Windows distribution"}
+      ]
     },
     "@semantic-release/git",
     "@semantic-release/changelog"
