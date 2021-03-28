@@ -1,0 +1,23 @@
+version: 2.1
+orbs:
+  node: circleci/node@4.2.0
+jobs:
+  publish:
+    executor: node/default
+    steps:
+      - checkout
+      - run:
+          command: |
+            npm install
+      - run:
+          name: release
+          command: |
+            npx semantic-release
+workflows:
+  publish:
+    jobs:
+      - publish:
+#          filters:
+#            branches:
+#              only: master
+          context: semantics-release
