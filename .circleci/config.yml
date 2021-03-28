@@ -18,4 +18,4 @@ workflows:
 #          filters:
 #            branches:
 #              only: master
-          context: GH_TOKEN
+          context: semantics-release
