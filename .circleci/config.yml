@@ -6,7 +6,7 @@ jobs:
   build:
     docker:
       - image: 'cimg/go:1.14'
-      - image: 'cimg/node:latest'
+      - image: 'cimg/node:15.11.0'
     steps:
       - checkout
       - go/load-cache
