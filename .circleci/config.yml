@@ -4,9 +4,9 @@ orbs:
   go: circleci/go@1.6.0
 jobs:
   build:
-    executor:
-      name: go/default
-      tag: '1.14'
+    docker:
+      - image: 'cimg/go:1.14'
+      - image: 'cimg/node:latest'
     steps:
       - checkout
       - go/load-cache
