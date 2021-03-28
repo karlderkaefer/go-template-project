@@ -6,7 +6,8 @@ jobs:
     executor: node/default
     steps:
       - checkout
-      - node/install
+      - node/install:
+          install-npm: false
       - run:
           name: release
           command: |
