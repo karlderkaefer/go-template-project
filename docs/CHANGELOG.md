@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/karlderkaefer/go-template-project/compare/v1.2.0...v1.2.1) (2021-05-08)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/sirupsen/logrus to v1.8.1 ([f6d1ca6](https://github.com/karlderkaefer/go-template-project/commit/f6d1ca67045f7cc941b5d0466c0cd1aeff02fe83))
+
 # [1.2.0](https://github.com/karlderkaefer/go-template-project/compare/v1.1.3...v1.2.0) (2021-05-08)
 
 
