@@ -83,22 +83,16 @@ jobs:
           command: |
             npx semantic-release
 workflows:
-  build:
+  build-and-publish:
     jobs:
       - get-version
       - build:
           requires:
             - get-version
-  publish:
-    jobs:
-      - build:
-         filters:
-           branches:
-             only: master
       - publish:
           filters:
             branches:
-              only: master
+              only: add-version-flag
           context: semantics-release
           requires:
             - build
