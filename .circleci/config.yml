@@ -12,7 +12,11 @@ jobs:
           name: export version variable
           command: |
             export APP_VERSION="$(npx semantic-release --dry-run | grep 'The next release version is' | sed -E 's/.* ([[:digit:].]+)$/\1/')"
-            echo "${PIPESTATUS[0]} ${PIPESTATUS[1]}"
+            export NPX_STATUS="${PIPESTATUS[0]} ${PIPESTATUS[1]}"
+            if [ ${NPX_STATUS} -ne 0 ]; then
+              echo "failed to run semantic release"
+              exit ${NPX_STATUS}
+            fi
             if [ -z "${APP_VERSION}" ]; then
               echo "no new version detected"
             else
