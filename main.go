@@ -19,6 +19,10 @@ import (
 var Version string
 
 func main() {
+	Execute()
+}
+
+func startServer() {
 	initLogger()
 	router := gin.New()
 	router.GET("/health", healthCheck)
