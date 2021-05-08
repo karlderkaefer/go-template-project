@@ -1,5 +1,5 @@
 {
   "extends": [
-    "github>karlderkaefer/cdk-renovate-config:golang"
+    "github>karlderkaefer/renovate-config:golang"
   ]
 }
