@@ -92,7 +92,7 @@ workflows:
       - publish:
           filters:
             branches:
-              only: add-version-flag
+              only: master
           context: semantics-release
           requires:
             - build
