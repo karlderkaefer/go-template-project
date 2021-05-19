@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/karlderkaefer/go-template-project/compare/v1.2.1...v1.2.2) (2021-05-19)
+
+
+### Bug Fixes
+
+* **deps:** update golang dependencies ([27db299](https://github.com/karlderkaefer/go-template-project/commit/27db29970764bb806e4f8f4194c3eca12cc70142))
+
 ## [1.2.1](https://github.com/karlderkaefer/go-template-project/compare/v1.2.0...v1.2.1) (2021-05-08)
 
 
