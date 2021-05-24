@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/karlderkaefer/go-template-project/compare/v1.2.3...v1.2.4) (2021-05-24)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/fatih/color to v1.12.0 ([2acd19f](https://github.com/karlderkaefer/go-template-project/commit/2acd19fe627cf6c939dabbd72cbc0836600e4a80))
+
 ## [1.2.3](https://github.com/karlderkaefer/go-template-project/compare/v1.2.2...v1.2.3) (2021-05-22)
 
 
