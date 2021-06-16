@@ -1,3 +1,10 @@
+## [1.2.5](https://github.com/karlderkaefer/go-template-project/compare/v1.2.4...v1.2.5) (2021-06-16)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/spf13/viper to v1.8.0 ([01e671d](https://github.com/karlderkaefer/go-template-project/commit/01e671d5e32c2d66f44127d77ecc7c703a323aa3))
+
 ## [1.2.4](https://github.com/karlderkaefer/go-template-project/compare/v1.2.3...v1.2.4) (2021-05-24)
 
 
