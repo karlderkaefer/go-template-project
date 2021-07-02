@@ -1,3 +1,10 @@
+## [1.2.8](https://github.com/karlderkaefer/go-template-project/compare/v1.2.7...v1.2.8) (2021-07-02)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/spf13/cobra to v1.2.1 ([ff451b6](https://github.com/karlderkaefer/go-template-project/commit/ff451b644b01a70e5f0743192dfb77b1e88b7b86))
+
 ## [1.2.7](https://github.com/karlderkaefer/go-template-project/compare/v1.2.6...v1.2.7) (2021-07-01)
 
 
