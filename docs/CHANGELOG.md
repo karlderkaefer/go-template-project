@@ -1,3 +1,10 @@
+## [1.2.10](https://github.com/karlderkaefer/go-template-project/compare/v1.2.9...v1.2.10) (2021-08-15)
+
+
+### Bug Fixes
+
+* **deps:** update module github.com/gin-gonic/gin to v1.7.4 ([b61d2a0](https://github.com/karlderkaefer/go-template-project/commit/b61d2a02c6187368cfe124c5a5ed4491fc28553e))
+
 ## [1.2.9](https://github.com/karlderkaefer/go-template-project/compare/v1.2.8...v1.2.9) (2021-08-03)
 
 
