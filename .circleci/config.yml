@@ -40,7 +40,7 @@ jobs:
             - .version
   build:
     docker:
-      - image: 'cimg/go:1.17'
+      - image: 'cimg/go:1.18'
     steps:
       - checkout
       - attach_workspace:
