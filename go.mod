@@ -1,6 +1,6 @@
 module github.com/karlderkaefer/go-template-project
 
-go 1.14
+go 1.19
 
 require (
 	github.com/clipperhouse/gen v4.1.1+incompatible
