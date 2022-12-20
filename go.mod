@@ -10,6 +10,6 @@ require (
 	github.com/sirupsen/logrus v1.9.0
 	github.com/spf13/cobra v1.6.1
 	github.com/spf13/viper v1.14.0
-	github.com/urfave/cli v1.22.10
+	github.com/urfave/cli/v2 v2.23.7
 	gorm.io/gorm v1.21.1 // indirect
 )
